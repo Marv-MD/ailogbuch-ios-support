@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Support – A&I-Logbuch</title>
+  <meta name="description" content="Supportseite für A&I-Logbuch – digitale Dokumentation der ärztlichen Weiterbildung in der Anästhesie und Intensivmedizin." />
+  <link rel="icon" href="data:;base64,=" />
+  <style>
+    :root { --fg:#0f172a; --muted:#475569; --bg:#ffffff; --accent:#2563eb; --card:#f8fafc; }
+    *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--fg);background:var(--bg);line-height:1.55}
+    header{padding:28px 20px;border-bottom:1px solid #e2e8f0;background:linear-gradient(180deg,#fff,#fafcff)}
+    .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+    h1{margin:0 0 6px;font-size:28px} h2{font-size:22px;margin:28px 0 10px}
+    p, li{color:var(--muted)}
+    .card{background:var(--card);border:1px solid #e2e8f0;border-radius:14px;padding:18px;margin:14px 0}
+    code{background:#eef2ff;border-radius:6px;padding:2px 6px}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    footer{margin:40px 0 20px;color:#94a3b8;font-size:13px}
+    .grid{display:grid;gap:16px}
+    @media (min-width:800px){ .grid{grid-template-columns:1fr 1fr} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Support – A&amp;I-Logbuch</h1>
+      <p>Hilfe, Kontakt & Informationen zur App für Weiterbildungsassistent:innen in der Anästhesie.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Über die App</h2>
+      <p><strong>A&amp;I-Logbuch</strong> ist meine App zur digitalen und datenschutzkonformen Dokumentation der ärztlichen Weiterbildung 
+        in der Anästhesie und Intensivmedizin.  
+        Du kannst damit Narkosen, intensivmedizinische Fälle und Notarzteinsätze strukturiert erfassen, deinen 
+        <strong>Fortschritt bei Fallzahlen und Weiterbildungszeit</strong> jederzeit überblicken und Daten exportieren oder sichern.  
+        Die App funktioniert auch <strong>offline</strong> und synchronisiert alle Änderungen automatisch mit der Cloud, sobald eine Internetverbindung besteht.</p>
+    </section>
+
+    <section class="card">
+      <h2>Hilfe &amp; häufige Fragen (FAQ)</h2>
+      <div class="grid">
+        <div>
+          <p><strong>Wie melde ich mich an?</strong><br>
+            Für die Nutzung der App ist eine Anmeldung mit <strong>E-Mail-Adresse und Passwort</strong> erforderlich.
+            Ich nutze dafür <strong>Firebase Authentication</strong>, um einen sicheren, persönlichen Zugang zu deiner Datenbank zu gewährleisten.</p>
+
+          <p><strong>Wie werden meine Daten gespeichert?</strong><br>
+            Deine Einträge werden in einer <strong>Firebase-Datenbank</strong> gespeichert.
+            So bleiben sie auch nach Gerätewechsel oder Neuinstallation erhalten.  
+            Alle Verbindungen sind <strong>verschlüsselt (HTTPS)</strong>, und Firebase agiert als Auftragsverarbeiter nach DSGVO.</p>
+
+          <p><strong>Werden patientenbezogene Daten gespeichert?</strong><br>
+            Nein. Es werden <strong>keine personenbezogenen Patientendaten</strong> erfasst.
+            Jeder Fall wird nur über eine <strong>anonyme Fall-ID</strong> (Buchstaben-Zahlen-Kombination ohne Personenbezug) dokumentiert.</p>
+
+          <p><strong>Funktioniert die App offline?</strong><br>
+            Ja. Du kannst Fälle auch ohne Internetverbindung erfassen.
+            Die Daten werden lokal zwischengespeichert und <strong>automatisch synchronisiert</strong>, sobald wieder eine Verbindung besteht.</p>
+        </div>
+
+        <div>
+          <p><strong>Wie exportiere ich meine Daten?</strong><br>
+            Ganz unten in der App findest du mehrere Exportfunktionen:
+            <ul>
+              <li><strong>Narkosen, Intensivfälle und Notfalleinsätze</strong> können jeweils separat als <strong>CSV-Datei</strong> mit allen Details exportiert werden.</li>
+              <li>Zusätzlich kannst du eine <strong>Gesamtübersicht</strong> aller Einträge als CSV-Datei erstellen.</li>
+              <li>Über die Funktion <strong>Backup</strong> lässt sich dein gesamtes Logbuch als <strong>JSON-Datei</strong> sichern oder wieder importieren.</li>
+            </ul>
+            Das Teilen- bzw. Speichern-Menü von iOS öffnet sich automatisch (z.&nbsp;B. „In Dateien sichern“ oder „Per Mail senden“).</p>
+
+          <p><strong>Wie kann ich Fehler oder Probleme melden?</strong><br>
+            In der App gibt es im Menü den Punkt <em>„Fehler melden“</em>.  
+            Darüber kannst du mir direkt eine Bugmeldung oder Rückmeldung senden.  
+            Die Nachricht wird automatisch mit App-Version und Gerätetyp versehen, damit ich Probleme gezielt beheben kann.</p>
+
+          <p><strong>Wie kann ich mein Konto oder meine Daten löschen?</strong><br>
+            Sende mir einfach eine E-Mail an <a href="mailto:kontakt@dr-mergen.de">kontakt@dr-mergen.de</a> mit der bei der Registrierung verwendeten E-Mail-Adresse.  
+            Ich lösche dein Konto und alle zugehörigen Daten vollständig aus Firebase.</p>
+
+          <p><strong>Wie steht es um den Datenschutz?</strong><br>
+            A&amp;I-Logbuch ist so konzipiert, dass ausschließlich anonyme Falldaten verarbeitet werden.  
+            Es findet kein Tracking, keine Werbenutzung und keine Weitergabe an Dritte statt.  
+            Weitere Details findest du in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
+
+          <p><strong>Wer steckt hinter der App?</strong><br>
+            Ich bin <strong>Marvin Mergen</strong>, Weiterbildungsassistent für Anästhesiologie am <strong>Klinikum Saarbrücken</strong>.  
+            Ich habe A&amp;I-Logbuch entwickelt, um den Dokumentationsalltag in der Weiterbildung einfacher, moderner und datenschutzkonform zu gestalten.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Kontakt</h2>
+      <p>Bei Fragen, Feedback oder technischen Problemen erreichst du mich jederzeit unter:</p>
+      <p>📧 <a href="mailto:kontakt@dr-mergen.de">kontakt@dr-mergen.de</a></p>
+    </section>
+
+    <section class="card">
+      <h2>Datenschutz</h2>
+      <p>A&amp;I-Logbuch verarbeitet ausschließlich anonyme Falldaten sowie Kontoinformationen, 
+         die für die Anmeldung und Speicherung notwendig sind.  
+         Firebase speichert die Daten sicher und verschlüsselt.  
+         Ich verwende keinerlei Analyse-, Tracking- oder Werbe-Tools.  
+         Details findest du in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Impressum</h2>
+      <p><strong>Verantwortlich i.S.d. §5 TMG</strong><br>
+      Dr. Marvin Mergen<br>
+      E-Mail: <a href="mailto:kontakt@dr-mergen.de">kontakt@dr-mergen.de</a><br>
+      (Anschrift hier einfügen, falls erforderlich)</p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> A&amp;I-Logbuch — Support
+    </footer>
+  </main>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

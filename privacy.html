@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Datenschutzerklärung – A&I-Logbuch</title>
+  <meta name="description" content="Datenschutz für A&I-Logbuch – digitale Dokumentation der ärztlichen Weiterbildung in der Anästhesie und Intensivmedizin." />
+  <style>
+    :root { --fg:#0f172a; --muted:#475569; --bg:#ffffff; --accent:#2563eb; --card:#f8fafc; }
+    *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--fg);background:var(--bg);line-height:1.55}
+    header{padding:28px 20px;border-bottom:1px solid #e2e8f0;background:linear-gradient(180deg,#fff,#fafcff)}
+    .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+    h1{margin:0 0 6px;font-size:28px} h2{font-size:22px;margin:28px 0 10px}
+    p, li{color:var(--muted)} ul{margin:8px 0 16px;padding-left:20px}
+    .card{background:var(--card);border:1px solid #e2e8f0;border-radius:14px;padding:18px;margin:14px 0}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    footer{margin:40px 0 20px;color:#94a3b8;font-size:13px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Datenschutzerklärung – A&amp;I-Logbuch</h1>
+      <p>Stand: <span id="date"></span></p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>1. Verantwortlicher</h2>
+      <p>Ich, <strong>Dr. Marvin Mergen</strong>, bin Verantwortlicher im Sinne der DSGVO für die App <em>A&amp;I-Logbuch</em>.</p>
+      <p>Kontakt: <a href="mailto:kontakt@dr-mergen.de">kontakt@dr-mergen.de</a></p>
+    </section>
+
+    <section class="card">
+      <h2>2. Zweck der App</h2>
+      <p>Die App dient der digitalen, datenschutzkonformen Dokumentation der ärztlichen Weiterbildung in der Anästhesie und Intensivmedizin.  
+         Ich habe A&amp;I-Logbuch entwickelt, um Narkosen, intensivmedizinische Fälle und Notarzteinsätze anonym, sicher und übersichtlich zu erfassen, 
+         Fortschritte zu verfolgen und Exporte oder Backups zu ermöglichen.</p>
+    </section>
+
+    <section class="card">
+      <h2>3. Verarbeitete Daten</h2>
+      <ul>
+        <li><strong>Konto- und Zugangsdaten:</strong> E-Mail-Adresse und Passwort (gesichert über Firebase Authentication; kein Zugriff auf Passwörter).</li>
+        <li><strong>Falldaten:</strong> anonyme Fall-IDs, Eingabedaten wie Operation, Diagnose, Kategorien, Zeitstempel und sonstige Dokumentationsinhalte.  
+            <em>Es werden keine patientenbezogenen Daten gespeichert.</em></li>
+        <li><strong>Fehlermeldungen:</strong> technische Logs und Fehlerberichte, die in Firebase gespeichert und mir zusätzlich per E-Mail übermittelt werden.</li>
+        <li><strong>Nutzungsstatistik:</strong> anonyme Zählung der App-Nutzungen (Firebase-Dashboard), <strong>kein Google Analytics-Tracking</strong>.</li>
+        <li><strong>Exports/Backups:</strong> CSV-Dateien und JSON-Backups, die du selbst lokal speicherst oder teilst.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Speicherung, Offline-Nutzung & Synchronisation</h2>
+      <p>Die App funktioniert <strong>offline</strong>: Eingaben werden lokal zwischengespeichert und <strong>automatisch mit der Cloud synchronisiert</strong>, 
+         sobald eine Internetverbindung besteht.  
+         Zur Speicherung verwende ich <strong>Cloud Firestore</strong> (Region <code>eur3</code> – Frankfurt) sowie <strong>Firebase Authentication</strong>.  
+         Die Übertragung erfolgt verschlüsselt über HTTPS.  
+         Google Ireland Ltd. (Gordon House, Barrow Street, Dublin 4, Irland) ist Auftragsverarbeiter gemäß Art. 28 DSGVO.</p>
+    </section>
+
+    <section class="card">
+      <h2>5. Rechtsgrundlagen</h2>
+      <ul>
+        <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> – zur Erfüllung des Nutzungsvertrags (App-Funktion, Registrierung, Synchronisation).</li>
+        <li><strong>Art. 6 Abs. 1 lit. f DSGVO</strong> – für Betrieb, Sicherheit, Wartung und Fehlerbehebung.</li>
+        <li><strong>Art. 6 Abs. 1 lit. a DSGVO</strong> – für freiwillige Angaben (z. B. Textinhalte in Fehlermeldungen).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>6. Empfänger / Auftragsverarbeiter</h2>
+      <p>Daten werden in Google Firebase verarbeitet.  
+         Google Ireland Ltd. ist Auftragsverarbeiter; technische Dienste der Google LLC (USA) können einbezogen sein.  
+         Übermittlungen in Drittländer erfolgen auf Basis der geltenden <strong>Standardvertragsklauseln</strong>.  
+         Eine Weitergabe zu Werbe- oder Trackingzwecken erfolgt <strong>nicht</strong>.</p>
+    </section>
+
+    <section class="card">
+      <h2>7. Speicherdauer & Löschung</h2>
+      <p>Deine Falldaten bleiben gespeichert, solange dein Benutzerkonto besteht.  
+         Du kannst jederzeit die <strong>Löschung deines Kontos und aller Daten</strong> verlangen.  
+         Exporte oder lokale Backups liegen in deiner eigenen Verantwortung.</p>
+    </section>
+
+    <section class="card">
+      <h2>8. Rechte der Nutzer:innen</h2>
+      <ul>
+        <li>Auskunft über gespeicherte Daten</li>
+        <li>Berichtigung unrichtiger Daten</li>
+        <li>Löschung („Recht auf Vergessenwerden“)</li>
+        <li>Einschränkung der Verarbeitung</li>
+        <li>Datenübertragbarkeit</li>
+        <li>Widerspruch gegen Verarbeitung auf Basis berechtigter Interessen</li>
+        <li>Beschwerde bei einer Datenschutzaufsichtsbehörde</li>
+      </ul>
+      <p>Zur Ausübung deiner Rechte genügt eine E-Mail an <a href="mailto:kontakt@dr-mergen.de">kontakt@dr-mergen.de</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>9. Sicherheit</h2>
+      <p>Die Übertragung erfolgt verschlüsselt (HTTPS).  
+         Ich nutze die Sicherheitsmechanismen von Firebase einschließlich Authentifizierung, Zugriffskontrolle und rollenbasierter Berechtigungen.  
+         Bitte wähle ein starkes Passwort und halte es vertraulich.</p>
+    </section>
+
+    <section class="card">
+      <h2>10. Minderjährige</h2>
+      <p>Die App richtet sich ausschließlich an medizinisches Fachpersonal und ist nicht für Minderjährige bestimmt.</p>
+    </section>
+
+    <section class="card">
+      <h2>11. Änderungen</h2>
+      <p>Ich kann diese Datenschutzerklärung anpassen, wenn sich technische oder rechtliche Rahmenbedingungen ändern.  
+         Die jeweils aktuelle Fassung findest du stets auf dieser Seite.</p>
+    </section>
+
+    <section class="card">
+      <h2>12. Kontakt</h2>
+      <p>Dr. Marvin Mergen<br>
+      E-Mail: <a href="mailto:kontakt@dr-mergen.de">kontakt@dr-mergen.de</a></p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> A&amp;I-Logbuch — Datenschutz
+    </footer>
+  </main>
+
+  <script>
+    const d = new Date();
+    document.getElementById('date').textContent = d.toLocaleDateString('de-DE');
+    document.getElementById('y').textContent = d.getFullYear();
+  </script>
+</body>
+</html>
