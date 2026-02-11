@@ -19,24 +19,45 @@
     footer{margin:40px 0 20px;color:#94a3b8;font-size:13px}
     .grid{display:grid;gap:16px}
     @media (min-width:800px){ .grid{grid-template-columns:1fr 1fr} }
+    .note{font-size:14px}
+    .pill{display:inline-block;padding:2px 10px;border:1px solid #cbd5e1;border-radius:999px;background:#fff;color:#334155;font-size:12px;margin-right:6px}
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
       <h1>Support – A&amp;I-Logbuch</h1>
-      <p>Hilfe, Kontakt & Informationen zur App für Weiterbildungsassistent:innen in der Anästhesie.</p>
+      <p>Hilfe, Kontakt &amp; Informationen zur App für Weiterbildungsassistent:innen in der Anästhesie.</p>
     </div>
   </header>
 
   <main class="wrap">
     <section class="card">
       <h2>Über die App</h2>
-      <p><strong>A&amp;I-Logbuch</strong> ist meine App zur digitalen und datenschutzkonformen Dokumentation der ärztlichen Weiterbildung 
-        in der Anästhesie und Intensivmedizin.  
-        Du kannst damit Narkosen, intensivmedizinische Fälle und Notarzteinsätze strukturiert erfassen, deinen 
-        <strong>Fortschritt bei Fallzahlen und Weiterbildungszeit</strong> jederzeit überblicken und Daten exportieren oder sichern.  
+      <p><strong>A&amp;I-Logbuch</strong> ist meine App zur digitalen und datenschutzkonformen Dokumentation der ärztlichen Weiterbildung
+        in der Anästhesie und Intensivmedizin.
+        Du kannst damit Narkosen, intensivmedizinische Fälle und Notarzteinsätze strukturiert erfassen, deinen
+        <strong>Fortschritt bei Fallzahlen und Weiterbildungszeit</strong> jederzeit überblicken und Daten exportieren oder sichern.
         Die App funktioniert auch <strong>offline</strong> und synchronisiert alle Änderungen automatisch mit der Cloud, sobald eine Internetverbindung besteht.</p>
+      <p class="note"><span class="pill">Neu</span> Seit dem letzten Update ist A&amp;I-Logbuch kostenpflichtig. Die Nutzung ist ausschließlich über ein Abonnement möglich. Es gibt einen kostenlosen Testzeitraum von 7 Tagen. Anschließend stehen zwei Abo-Optionen zur Verfügung: 0,99 € pro Monat oder 9,99 € pro Jahr.</p>
+    </section>
+
+    <section class="card">
+      <h2>Abonnement &amp; In‑App‑Käufe</h2>
+      <p>A&amp;I-Logbuch ist ausschließlich über ein automatisch verlängerndes Abonnement (Auto‑Renewable Subscription) nutzbar. Nach einem kostenlosen Testzeitraum von 7 Tagen wird – sofern nicht rechtzeitig gekündigt – eines der gewählten Abonnements berechnet (0,99 € pro Monat oder 9,99 € pro Jahr). Details zu Preisen und Laufzeiten siehst du direkt in der App auf der Paywall sowie im App Store. Die Preise werden im jeweiligen Land in der entsprechenden Landeswährung angezeigt.</p>
+
+      <p><strong>Verlängerung &amp; Kündigung</strong><br>
+        Das Abonnement verlängert sich automatisch, sofern es nicht spätestens 24 Stunden vor Ablauf der aktuellen Laufzeit gekündigt wird.
+        Die Belastung erfolgt über deinen Apple‑Account. Du kannst dein Abonnement jederzeit in den iOS‑Einstellungen verwalten und kündigen.</p>
+
+      <p><strong>Verwaltung in iOS</strong><br>
+        Öffne <em>Einstellungen</em> → <em>[Dein Name]</em> → <em>Abonnements</em> und wähle dort <em>A&amp;I‑Logbuch</em>.</p>
+
+      <p><strong>Käufe wiederherstellen</strong><br>
+        Wenn du bereits ein Abonnement abgeschlossen hast (z.&nbsp;B. nach Gerätewechsel), kannst du in der App über
+        <em>„Käufe wiederherstellen“</em> den Zugriff erneut aktivieren.</p>
+
+      <p class="note">Hinweis: Testkäufe (Sandbox/TestFlight) funktionieren nur mit einem separaten Sandbox‑Apple‑ID‑Account. Im Live‑Betrieb werden echte Käufe über den App Store abgewickelt.</p>
     </section>
 
     <section class="card">
@@ -49,7 +70,7 @@
 
           <p><strong>Wie werden meine Daten gespeichert?</strong><br>
             Deine Einträge werden in einer <strong>Firebase-Datenbank</strong> gespeichert.
-            So bleiben sie auch nach Gerätewechsel oder Neuinstallation erhalten.  
+            So bleiben sie auch nach Gerätewechsel oder Neuinstallation erhalten.
             Alle Verbindungen sind <strong>verschlüsselt (HTTPS)</strong>, und Firebase agiert als Auftragsverarbeiter nach DSGVO.</p>
 
           <p><strong>Werden patientenbezogene Daten gespeichert?</strong><br>
@@ -63,30 +84,35 @@
 
         <div>
           <p><strong>Wie exportiere ich meine Daten?</strong><br>
-            Ganz unten in der App findest du mehrere Exportfunktionen:
+            Unter dem Menüpunkt "Export" findest du mehrere Exportfunktionen:</p>
             <ul>
               <li><strong>Narkosen, Intensivfälle und Notfalleinsätze</strong> können jeweils separat als <strong>CSV-Datei</strong> mit allen Details exportiert werden.</li>
               <li>Zusätzlich kannst du eine <strong>Gesamtübersicht</strong> aller Einträge als CSV-Datei erstellen.</li>
               <li>Über die Funktion <strong>Backup</strong> lässt sich dein gesamtes Logbuch als <strong>JSON-Datei</strong> sichern oder wieder importieren.</li>
             </ul>
-            Das Teilen- bzw. Speichern-Menü von iOS öffnet sich automatisch (z.&nbsp;B. „In Dateien sichern“ oder „Per Mail senden“).</p>
+            <p>Das Teilen- bzw. Speichern-Menü von iOS öffnet sich automatisch (z.&nbsp;B. „In Dateien sichern“ oder „Per Mail senden“).</p>
+
+          <p><strong>Ich habe ein Abo, aber kein Zugriff – was tun?</strong><br>
+            Bitte prüfe zuerst, ob du mit derselben Apple‑ID angemeldet bist, mit der du das Abo abgeschlossen hast.
+            Öffne anschließend in der App die Paywall und tippe auf <em>„Käufe wiederherstellen“</em>.
+            Falls es weiterhin nicht klappt, schreibe mir eine Mail (siehe Kontakt).</p>
 
           <p><strong>Wie kann ich Fehler oder Probleme melden?</strong><br>
-            In der App gibt es im Menü den Punkt <em>„Fehler melden“</em>.  
-            Darüber kannst du mir direkt eine Bugmeldung oder Rückmeldung senden.  
+            In der App gibt es im Menü den Punkt <em>„Fehler melden“</em>.
+            Darüber kannst du mir direkt eine Bugmeldung oder Rückmeldung senden.
             Die Nachricht wird automatisch mit App-Version und Gerätetyp versehen, damit ich Probleme gezielt beheben kann.</p>
 
           <p><strong>Wie kann ich mein Konto oder meine Daten löschen?</strong><br>
-            Sende mir einfach eine E-Mail an <a href="mailto:kontakt@dr-mergen.de">kontakt@dr-mergen.de</a> mit der bei der Registrierung verwendeten E-Mail-Adresse.  
+            Sende mir einfach eine E-Mail an <a href="mailto:kontakt@dr-mergen.de">kontakt@dr-mergen.de</a> mit der bei der Registrierung verwendeten E-Mail-Adresse.
             Ich lösche dein Konto und alle zugehörigen Daten vollständig aus Firebase.</p>
 
           <p><strong>Wie steht es um den Datenschutz?</strong><br>
-            A&amp;I-Logbuch ist so konzipiert, dass ausschließlich anonyme Falldaten verarbeitet werden.  
-            Es findet kein Tracking, keine Werbenutzung und keine Weitergabe an Dritte statt.  
+            A&amp;I-Logbuch ist so konzipiert, dass ausschließlich anonyme Falldaten verarbeitet werden.
+            Es findet kein Tracking, keine Werbenutzung und keine Weitergabe an Dritte statt.
             Weitere Details findest du in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
 
           <p><strong>Wer steckt hinter der App?</strong><br>
-            Ich bin <strong>Marvin Mergen</strong>, Weiterbildungsassistent für Anästhesiologie am <strong>Klinikum Saarbrücken</strong>.  
+            Ich bin <strong>Marvin Mergen</strong>, Weiterbildungsassistent für Anästhesiologie am <strong>Klinikum Saarbrücken</strong>.
             Ich habe A&amp;I-Logbuch entwickelt, um den Dokumentationsalltag in der Weiterbildung einfacher, moderner und datenschutzkonform zu gestalten.</p>
         </div>
       </div>
@@ -100,10 +126,10 @@
 
     <section class="card">
       <h2>Datenschutz</h2>
-      <p>A&amp;I-Logbuch verarbeitet ausschließlich anonyme Falldaten sowie Kontoinformationen, 
-         die für die Anmeldung und Speicherung notwendig sind.  
-         Firebase speichert die Daten sicher und verschlüsselt.  
-         Ich verwende keinerlei Analyse-, Tracking- oder Werbe-Tools.  
+      <p>A&amp;I-Logbuch verarbeitet ausschließlich anonyme Falldaten sowie Kontoinformationen,
+         die für die Anmeldung und Speicherung notwendig sind.
+         Firebase speichert die Daten sicher und verschlüsselt.
+         Ich verwende keinerlei Analyse-, Tracking- oder Werbe-Tools.
          Details findest du in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
     </section>
 
@@ -112,7 +138,7 @@
       <p><strong>Verantwortlich i.S.d. §5 TMG</strong><br>
       Dr. Marvin Mergen<br>
       E-Mail: <a href="mailto:kontakt@dr-mergen.de">kontakt@dr-mergen.de</a><br>
-      (Anschrift hier einfügen, falls erforderlich)</p>
+      </p>
     </section>
 
     <footer>
