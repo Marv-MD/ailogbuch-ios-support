@@ -34,8 +34,8 @@
 
     <section class="card">
       <h2>2. Zweck der App</h2>
-      <p>Die App dient der digitalen, datenschutzkonformen Dokumentation der ärztlichen Weiterbildung in der Anästhesie und Intensivmedizin.  
-         Ich habe A&amp;I-Logbuch entwickelt, um Narkosen, intensivmedizinische Fälle und Notarzteinsätze anonym, sicher und übersichtlich zu erfassen, 
+      <p>Die App dient der digitalen, datenschutzkonformen Dokumentation der ärztlichen Weiterbildung in der Anästhesie und Intensivmedizin.
+         Ich habe A&amp;I-Logbuch entwickelt, um Narkosen, intensivmedizinische Fälle und Notarzteinsätze anonym, sicher und übersichtlich zu erfassen,
          Fortschritte zu verfolgen und Exporte oder Backups zu ermöglichen.</p>
     </section>
 
@@ -43,20 +43,21 @@
       <h2>3. Verarbeitete Daten</h2>
       <ul>
         <li><strong>Konto- und Zugangsdaten:</strong> E-Mail-Adresse und Passwort (gesichert über Firebase Authentication; kein Zugriff auf Passwörter).</li>
-        <li><strong>Falldaten:</strong> anonyme Fall-IDs, Eingabedaten wie Operation, Diagnose, Kategorien, Zeitstempel und sonstige Dokumentationsinhalte.  
+        <li><strong>Falldaten:</strong> anonyme Fall-IDs, Eingabedaten wie Operation, Diagnose, Kategorien, Zeitstempel und sonstige Dokumentationsinhalte.
             <em>Es werden keine patientenbezogenen Daten gespeichert.</em></li>
-        <li><strong>Fehlermeldungen:</strong> technische Logs und Fehlerberichte, die in Firebase gespeichert und mir zusätzlich per E-Mail übermittelt werden.</li>
+        <li><strong>Fehlermeldungen:</strong> die von dir eingegebene Beschreibung und optionale Details sowie Konto-ID, E-Mail-Adresse, Zeitstempel und die Angabe „iOS-App“. Diese Angaben werden in Firebase gespeichert und über EmailJS per E-Mail an den App-Betreiber übermittelt. Passwörter und deine Fallliste werden dabei nicht mitgesendet.</li>
         <li><strong>Nutzungsstatistik:</strong> anonyme Zählung der App-Nutzungen (Firebase-Dashboard), <strong>kein Google Analytics-Tracking</strong>.</li>
+        <li><strong>Löschaufträge:</strong> Konto-ID, E-Mail-Adresse, Auftragsnummer und Zeitpunkt deiner bestätigten Löschanfrage. Die Ablage erfolgt in Firebase; die Benachrichtigung des App-Betreibers erfolgt über EmailJS. Die Passwortbestätigung wird ausschließlich durch Firebase Authentication verarbeitet.</li>
         <li><strong>Exports/Backups:</strong> CSV-Dateien und JSON-Backups, die du selbst lokal speicherst oder teilst.</li>
       </ul>
     </section>
 
     <section class="card">
       <h2>4. Speicherung, Offline-Nutzung & Synchronisation</h2>
-      <p>Die App funktioniert <strong>offline</strong>: Eingaben werden lokal zwischengespeichert und <strong>automatisch mit der Cloud synchronisiert</strong>, 
-         sobald eine Internetverbindung besteht.  
-         Zur Speicherung verwende ich <strong>Cloud Firestore</strong> (Region <code>eur3</code> – Frankfurt) sowie <strong>Firebase Authentication</strong>.  
-         Die Übertragung erfolgt verschlüsselt über HTTPS.  
+      <p>Die App funktioniert <strong>offline</strong>: Eingaben werden lokal zwischengespeichert und <strong>automatisch mit der Cloud synchronisiert</strong>,
+         sobald eine Internetverbindung besteht.
+         Zur Speicherung verwende ich <strong>Cloud Firestore</strong> (Region <code>eur3</code> – Frankfurt) sowie <strong>Firebase Authentication</strong>.
+         Die Übertragung erfolgt verschlüsselt über HTTPS.
          Google Ireland Ltd. (Gordon House, Barrow Street, Dublin 4, Irland) ist Auftragsverarbeiter gemäß Art. 28 DSGVO.</p>
     </section>
 
@@ -71,17 +72,18 @@
 
     <section class="card">
       <h2>6. Empfänger / Auftragsverarbeiter</h2>
-      <p>Daten werden in Google Firebase verarbeitet.  
-         Google Ireland Ltd. ist Auftragsverarbeiter; technische Dienste der Google LLC (USA) können einbezogen sein.  
-         Übermittlungen in Drittländer erfolgen auf Basis der geltenden <strong>Standardvertragsklauseln</strong>.  
+      <p>Daten werden in Google Firebase verarbeitet.
+         Google Ireland Ltd. ist Auftragsverarbeiter; technische Dienste der Google LLC (USA) können einbezogen sein.
+         Übermittlungen in Drittländer erfolgen auf Basis der geltenden <strong>Standardvertragsklauseln</strong>.
          Eine Weitergabe zu Werbe- oder Trackingzwecken erfolgt <strong>nicht</strong>.</p>
+      <p>Für Benachrichtigungen zu freiwillig abgesendeten Fehlerberichten und zu Löschaufträgen verwende ich <strong>EmailJS Pte. Ltd.</strong>. Übermittelt werden die oben genannten Inhalte und Kontaktdaten an den von mir eingerichteten E-Mail-Dienst und mein Support-Postfach. EmailJS beschreibt eine Verarbeitung auf Servern in den USA und Standardvertragsklauseln als Schutzmechanismus für internationale Übermittlungen. Einzelheiten: <a href="https://www.emailjs.com/legal/privacy-policy/">Datenschutzhinweise von EmailJS</a> und <a href="https://www.emailjs.com/legal/data-protection-agreement/">Auftragsverarbeitung bei EmailJS</a>.</p>
     </section>
 
     <section class="card">
       <h2>7. Speicherdauer & Löschung</h2>
-      <p>Deine Falldaten bleiben gespeichert, solange dein Benutzerkonto besteht.  
-         Du kannst jederzeit die <strong>Löschung deines Kontos und aller Daten</strong> verlangen.  
-         Exporte oder lokale Backups liegen in deiner eigenen Verantwortung.</p>
+      <p>Deine Falldaten bleiben gespeichert, solange dein Benutzerkonto besteht.
+         Ab App-Version 1.4 kannst du direkt in der App über <strong>Profil → Konto löschen</strong> die Löschung deines Kontos und der zugehörigen Daten anfordern. Auch ohne aktives Abo ist „Konto löschen“ auf der Abo-Seite erreichbar. Nach Bestätigung mit deinem Passwort wird der Auftrag übermittelt; die Löschung erfolgt manuell innerhalb von 30 Tagen. Anschließend erhältst du eine Bestätigung per E-Mail. Dies umfasst dein Firebase-Konto, Profildaten, Fälle und zugeordnete Fehlerberichte sowie entsprechende Support-Kopien, soweit keine gesetzliche Aufbewahrung erforderlich ist. Ein Apple-Abonnement wird dadurch nicht automatisch beendet und muss separat bei Apple verwaltet werden.
+         Selbst angelegte Exporte, lokale Backups und lokale Kopien auf deinen Geräten musst du selbst entfernen, etwa durch Löschen der App. Diese Kopien werden durch den Löschauftrag nicht aus der Ferne entfernt.</p>
     </section>
 
     <section class="card">
@@ -100,8 +102,8 @@
 
     <section class="card">
       <h2>9. Sicherheit</h2>
-      <p>Die Übertragung erfolgt verschlüsselt (HTTPS).  
-         Ich nutze die Sicherheitsmechanismen von Firebase einschließlich Authentifizierung, Zugriffskontrolle und rollenbasierter Berechtigungen.  
+      <p>Die Übertragung erfolgt verschlüsselt (HTTPS).
+         Ich nutze die Sicherheitsmechanismen von Firebase einschließlich Authentifizierung, Zugriffskontrolle und rollenbasierter Berechtigungen.
          Bitte wähle ein starkes Passwort und halte es vertraulich.</p>
     </section>
 
@@ -112,7 +114,7 @@
 
     <section class="card">
       <h2>11. Änderungen</h2>
-      <p>Ich kann diese Datenschutzerklärung anpassen, wenn sich technische oder rechtliche Rahmenbedingungen ändern.  
+      <p>Ich kann diese Datenschutzerklärung anpassen, wenn sich technische oder rechtliche Rahmenbedingungen ändern.
          Die jeweils aktuelle Fassung findest du stets auf dieser Seite.</p>
     </section>
 
